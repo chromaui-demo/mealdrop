@@ -23,7 +23,7 @@ const Container = styled.div(
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    border-radius: ${borderRadius.m};
+    border-radius: ${borderRadius.s};
     width: 100%;
     max-width: 500px;
     &:hover {
@@ -109,6 +109,7 @@ const Description = styled(Body)`
 const StyledBadge = styled(Badge)`
   margin-top: 1.5rem;
   margin-right: 0.5rem;
+  background: ${({ theme: { color } }) => color.buttonSecondary};
 `
 
 const StyledHeading = styled(Heading)(
