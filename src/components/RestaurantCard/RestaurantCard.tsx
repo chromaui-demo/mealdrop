@@ -23,7 +23,7 @@ const Container = styled.div(
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    border-radius: ${borderRadius.s};
+    border-radius: ${borderRadius.m};
     width: 100%;
     max-width: 500px;
     &:hover {
