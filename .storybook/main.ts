@@ -9,10 +9,10 @@ const config: StorybookConfig = {
   ],
   addons: [
     '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
     '@storybook/addon-a11y',
-    '@storybook/addon-coverage',
     '@storybook/addon-designs',
+    '@chromaui/addon-visual-tests',
+    '@storybook/addon-interactions',
   ],
   typescript: {
     reactDocgen: 'react-docgen',
