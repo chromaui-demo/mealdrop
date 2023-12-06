@@ -3,6 +3,7 @@ on: push
 
 jobs:
   chromatic-deployment:
+    environment: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
