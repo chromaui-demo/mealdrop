@@ -109,7 +109,7 @@ const Description = styled(Body)`
 const StyledBadge = styled(Badge)`
   margin-top: 1.5rem;
   margin-right: 0.5rem;
-  background: ${({ theme: { color } }) => color.reviewText};
+  background: ${({ theme: { color } }) => color.bannerBackground};
 `
 
 const StyledHeading = styled(Heading)(
