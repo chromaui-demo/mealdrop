@@ -7434,14 +7434,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:^6.1.0":
-  version: 6.19.9
-  resolution: "chromatic@npm:6.19.9"
+"chromatic@npm:^18.11.0":
+  version: 18.11.0
+  resolution: "chromatic@npm:18.11.0"
+  dependencies:
+    semver: ^7.3.5
+  peerDependencies:
+    "@chromatic-com/cypress": ^0.*.* || ^1.0.0
+    "@chromatic-com/playwright": ^0.*.* || ^1.0.0
+    "@chromatic-com/vitest": ^0.*.* || ^1.0.0
+  dependenciesMeta:
+    "@sentry/cli":
+      built: true
+    esbuild:
+      built: true
+  peerDependenciesMeta:
+    "@chromatic-com/cypress":
+      optional: true
+    "@chromatic-com/playwright":
+      optional: true
+    "@chromatic-com/vitest":
+      optional: true
   bin:
-    chroma: dist/bin.js
-    chromatic: dist/bin.js
-    chromatic-cli: dist/bin.js
-  checksum: 50552c3043d96e7badb0d16ddd1839c0601d0f5e0c2c573acda5d6b0d0fad96067f0c659ad0a2b278d8b28b46670549b4bcedfd2d350a9077975aff203c29193
+    chroma: dist/bin.cjs
+    chromatic: dist/bin.cjs
+    chromatic-cli: dist/bin.cjs
+  checksum: b788e479211c37470c8bc36d59e682808015c155cdd782c497456e32d8b548aa033fec041ed8d2d47bfdb297a5790dc08c914e24e91d80f0bdad7d1ac15ff4eb
   languageName: node
   linkType: hard
 
@@ -7948,7 +7966,7 @@ __metadata:
     babel-plugin-istanbul: ^6.1.1
     babel-plugin-open-source: ^1.3.3
     c8: ^7.12.0
-    chromatic: ^6.1.0
+    chromatic: ^18.11.0
     eslint: ^8.27.0
     eslint-config-airbnb-typescript: ^16.0.0
     eslint-config-prettier: ^8.3.0
